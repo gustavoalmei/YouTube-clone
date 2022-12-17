@@ -1,0 +1,67 @@
+#menu-aside {
+  height: 100%;
+  position: fixed;
+  top: 66px;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+#menu-aside > div {
+  width: 250px;
+  background-color: #313131;
+  height: calc(100% - 66px);
+  overflow-y: scroll;
+}
+
+.group-aside {
+  color: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-aside .nav-link {
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+.group-aside .nav-link:hover {
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+.group-aside .nav-link i {
+  margin-right: 15px;
+}
+
+/* scrollbar */
+
+/* width */
+#menu-aside > div::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#menu-aside > div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+#menu-aside > div::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+  visibility: hidden;
+}
+
+#menu-aside > div:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* links about */
+.about .link-about{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 8px;
+    word-spacing: 1px;
+}

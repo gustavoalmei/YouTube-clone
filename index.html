@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link
+      rel="shortcut icon"
+      href="./src/img/icon/icon-fav.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/content/index.css" />
+    <link rel="stylesheet" href="./src/content/header.css" />
+    <link rel="stylesheet" href="./src/content/aside.css" />
+    <link rel="stylesheet" href="./src/content/slick.css" />
+    <link rel="stylesheet" href="./src/content/card.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+        <div class="navbar navbar-expand-sm">
+            <div class="container-fluid justify-content-sm-start">
+                <button class="btn btn-menu border-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-aside"
+                >
+                    <i class="fs fa-solid fa-bars"></i>
+                </button>
+                <img 
+                class="logo-header navbar-brand"
+                src="./src/img/icon/logo-youtube.svg">
+            </div>
+            <div class="container-fluid flex-nowrap col-lg-4 col-sm-5 mt-2 mb-2 m-sm-0">
+                <div class="input-group">
+                    <input 
+                    id="search-input"
+                    class="form-control" 
+                    type="text"
+                    placeholder="Pesquisar">
+                    <button 
+                    class="btn btn-search input-group-btn" 
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Pesquisar"
+                    type="button">
+                        <i class="fs fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <button 
+                class="btn btn-menu btn-mic" 
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Pesquisar usando sua voz"
+                type="button">
+                    <i class="fs fa-solid fa-microphone"></i>
+                </button>
+            </div>
+            <div class="container-fluid justify-content-sm-end">
+                <div class="account-content">
+                    <button 
+                    class="btn btn-menu" 
+                    type="button"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Configuracoes">
+                        <i class="fs fa-solid fa-ellipsis-vertical ps-1 pe-1"></i>
+                    </button>
+                </div>
+                <div class="account-content">
+                    <button 
+                    id="user-account-btn"
+                    class="btn btn-menu" 
+                    type="button">
+                        <i class="fa-regular fa-circle-user"></i>
+                        Fazer login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside id="menu-aside" class="collapse collapse-horizontal">
+            <div>
+                <nav class="nav list-group">
+                    <div class="group-aside">
+                        <a class="nav-link active" href="#">
+                            <i class="fs fa-solid fa-house-chimney"></i>
+                            Home
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fs fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                    </div>
+                    <div class="group-aside">
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                    </div>
+                    <div class="group-aside">
+                        <div class="account-content">
+                            <p class="col-11 m-auto">
+                                Faga login para curtir
+                                videos, comentar e se
+                                inscrever.
+                            </p>
+                            <button 
+                            id="user-account-btn"
+                            class="btn btn-menu mt-3" 
+                            type="button">
+                                <i class="fa-regular fa-circle-user"></i>
+                                Fazer login
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group-aside">
+                        <p class="col-11 m-auto">Explorar</p>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                    </div>
+                    <div class="group-aside">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            Procurar canais
+                        </a>
+                    </div>
+                    <div class="group-aside">
+                        <p class="col-11 m-auto">Mais do Ioutubiu</p>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Item
+                        </a>
+                    </div>
+                    <div class="group-aside">
+                        <a class="nav-link active" href="#">
+                            <i class="fs fa-solid fa-gear"></i>
+                            Configuracoes
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fs fa-solid fa-flag"></i>
+                            Histórico de denúncias
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fa-regular fa-circle-question"></i>
+                            Ajuda
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fs fa-regular fa-comment-dots"></i>
+                            Enviar feedback
+                        </a>
+                    </div>
+                    <div class="group-aside">
+                        <div class="about col-11 mb-2 m-auto d-flex flex-wrap">
+                            <small>
+                                <a class="link-about" href="#">
+                                    Sobre
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Imprensa
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Direitos autorais
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Entre em contato
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Criadores de conteüdo
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Publicidade Desenvolvedores
+                                </a>
+                            </small>
+                        </div>
+                        <div class="about col-11 m-auto d-flex flex-wrap">
+                            <small>
+                                <a class="link-about" href="#">
+                                    Termos Privacidade
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Politica e seguranqa
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Como funciona o YouTube
+                                </a>
+                            </small>
+                            <small>
+                                <a class="link-about" href="#">
+                                    Testar os novos recursos
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <div id="carousel-container" class=" d-flex align-items-center">
+            <button type="button" class="btn btn-menu slick-btn slick-prev">
+                <i class="fs fa-solid fa-caret-left"></i>
+            </button>
+            <div id="carousel-category" class="slick-container">
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Todos
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Musica
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Jogos
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Minecraft
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Fortnite
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        CS:GO
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Sorvete
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Stream
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Web
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Pegadinhas
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Dev
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Gaming
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Meme
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Twitch
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Alanzoka
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Bruninho
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        TikTok
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Facebook
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Twitter
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        EBAC
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        JS
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        HTML
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        Hacker
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a href="#" class="category-popular">
+                        NASA
+                    </a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-menu slick-btn slick-next">
+                <i class="fs fa-solid fa-caret-right"></i>
+            </button>
+        </div>
+        <div class="container-fluid">
+            <div class="grid-videos">
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-videos">
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                    <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                    <div class="card-body d-flex">
+                        <img class="rounded-5"src="https://via.placeholder.com/35">
+                        <div class="body-text">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="small m-0">Chanel name</p>
+                            <p class="small m-0">123 Viewers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-videos">
+                <h3 class="col-11 m-0 text-white">Em alta</h3>
+                <div class="grid-videos">
+                    <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                        <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                        <div class="card-body d-flex">
+                            <img class="rounded-5"src="https://via.placeholder.com/35">
+                            <div class="body-text">
+                                <h5 class="card-title">
+                                    Card title
+                                </h5>
+                                <p class="small m-0">Chanel name</p>
+                                <p class="small m-0">123 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                        <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                        <div class="card-body d-flex">
+                            <img class="rounded-5"src="https://via.placeholder.com/35">
+                            <div class="body-text">
+                                <h5 class="card-title">
+                                    Card title
+                                </h5>
+                                <p class="small m-0">Chanel name</p>
+                                <p class="small m-0">123 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                        <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                        <div class="card-body d-flex">
+                            <img class="rounded-5"src="https://via.placeholder.com/35">
+                            <div class="body-text">
+                                <h5 class="card-title">
+                                    Card title
+                                </h5>
+                                <p class="small m-0">Chanel name</p>
+                                <p class="small m-0">123 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                        <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                        <div class="card-body d-flex">
+                            <img class="rounded-5"src="https://via.placeholder.com/35">
+                            <div class="body-text">
+                                <h5 class="card-title">
+                                    Card title
+                                </h5>
+                                <p class="small m-0">Chanel name</p>
+                                <p class="small m-0">123 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                        <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                        <div class="card-body d-flex">
+                            <img class="rounded-5"src="https://via.placeholder.com/35">
+                            <div class="body-text">
+                                <h5 class="card-title">
+                                    Card title
+                                </h5>
+                                <p class="small m-0">Chanel name</p>
+                                <p class="small m-0">123 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-4 col-md-3 col-xl-2">
+                        <img class="rounded-5" src="https://via.placeholder.com/350x200">
+                        <div class="card-body d-flex">
+                            <img class="rounded-5"src="https://via.placeholder.com/35">
+                            <div class="body-text">
+                                <h5 class="card-title">
+                                    Card title
+                                </h5>
+                                <p class="small m-0">Chanel name</p>
+                                <p class="small m-0">123 Viewers</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/lib/jquery-3.6.2.min.js"></script>
+    <script src="./src/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./src/action/index.js"></script>
+  </body>
+</html>

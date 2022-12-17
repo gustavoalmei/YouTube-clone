@@ -1,0 +1,86 @@
+header{
+    background-color: #313131;
+}
+
+/* size logo */
+.logo-header{
+    height: 50px;
+}
+
+/* btn */
+.btn-menu{
+    border-radius: 50px;
+}
+
+.btn-menu:hover{
+    background-color: rgba(233, 233, 233, 0.2);
+}
+
+.btn-menu img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.account-content .btn-menu{
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.input-group-btn{
+    width: 60px;
+}
+
+/* user */
+#user-account-btn{
+    border: 1px solid #3ea6ff;
+    color: #3ea6ff;
+}
+
+#user-account-btn:hover{
+    background-color: #263850;
+}
+
+/* user icon */
+#icon-user{
+    border: 1px solid #ccc;
+}
+
+.input-group .btn-menu,
+.input-group input{
+    border: 1px solid rgba(233, 233, 233, 0.2);
+    border-radius: 50px;
+}
+
+.btn-mic{
+    margin-left: 15px;
+    background-color: rgba(233, 233, 233, 0.05);
+}
+
+/* tooltip */
+.class-tooltip .tooltip-arrow{
+    display: none;
+}
+
+.class-tooltip .tooltip-inner{
+    margin-top: 2px;
+    background-color: #000;
+}
+
+/* search */
+#search-input{
+    background-color: #313131;
+    color: #fff;
+}
+
+#search-input::placeholder{
+    color: #fff;
+}
+
+.btn-search{
+    background-color: rgba(233, 233, 233, 0.2);
+    border-radius: 50px;
+}
+
+.btn-search:hover{
+    background-color: rgba(233, 233, 233, 0.2);
+}
